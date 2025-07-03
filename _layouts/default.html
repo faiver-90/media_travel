@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body { font-family: sans-serif; margin: 0 auto; max-width: 800px; padding: 20px; }
+      h1, h2 { color: #2e6da4; }
+      ul { padding-left: 20px; }
+      footer { margin-top: 40px; text-align: center; font-size: 0.9em; color: gray; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.description }}</p>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      &copy; {{ site.time | date: "%Y" }} Media Travel. All rights reserved.
+    </footer>
+  </body>
+</html>
